@@ -1,0 +1,4 @@
+includes the newline character in the buffer if it encounters it before reaching the maximum length.
+If you need to parse the string after reading it
+ you may need to use
+ dditional functions (like sscanf, strtok, etc.) to process the input.

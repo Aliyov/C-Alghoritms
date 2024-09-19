@@ -1,0 +1,10 @@
+includesTheNewlineCh
+aracterInTheBufferIf
+ItEncountersItBefore
+ReachingTheMaximumLe
+ngth.IfYouNeedToPars
+eTheStringAfterReadi
+ngItYouMayNeedToUseD
+ditionalFunctions(li
+keSscanf,Strtok,Etc.
+)ToProcessTheInput.

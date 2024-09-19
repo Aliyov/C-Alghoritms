@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "s:/C_coding/ALGO_C/Alghoritms-in-C/Gym/Book_Exercises/Page 77-158",
-      "program": "s:/C_coding/ALGO_C/Alghoritms-in-C/Gym/Book_Exercises/Page 77-158/build/Debug/outDebug",
+      "cwd": "s:/C_coding/ALGO_C/Alghoritms-in-C/Gym",
+      "program": "s:/C_coding/ALGO_C/Alghoritms-in-C/Gym/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
