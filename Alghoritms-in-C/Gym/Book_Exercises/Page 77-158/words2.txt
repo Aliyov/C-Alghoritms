@@ -1,0 +1,5 @@
+4 3
+milano torino venezia
+bari genova taranto
+firenza napoli roma
+bologna cagliari palermo
