@@ -59,6 +59,14 @@
   "editor.guides.highlightActiveIndentation": true,
   "editor.autoIndent": "full",
   "files.associations": {
-    "typeinfo": "c"
-  }
+    "typeinfo": "c",
+    "limits.h": "c",
+    "system_error": "c",
+    "array": "c",
+    "functional": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "utility": "c"
+  },
+  "C_Cpp.errorSquiggles": "enabled"
 }
