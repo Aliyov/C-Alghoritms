@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int gcd(int x, int y){
+	if(x/y == 0){
+		return y;
+	}
+	
+	int z = x%y;
+	return gcd(x,z);
+}
+
+
+int main(){
+	int x, y;
+	printf("Enter two numbers: ");
+	scanf("%d%d", &x, &y);
+	
+	int answer = gcd(x,y);
+	printf("\nAnswer: %d", answer);
+	
+	return 0;
+}
