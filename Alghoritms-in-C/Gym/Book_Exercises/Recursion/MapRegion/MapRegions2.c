@@ -9,7 +9,7 @@ void map_write(char *, int [DIM][DIM], int, int, int);
 
 int main(int argc, char *argv[]) {
     int map[DIM][DIM];
-    int i, j, nr, nc, n = 0;
+    int nr, nc, n = 0;
 
     if (argc != 3) {
         fprintf(stderr, "Usage: %s <input_file> <output_file>\n", argv[0]);
@@ -18,8 +18,8 @@ int main(int argc, char *argv[]) {
 
     map_read(argv[1], map, &nr, &nc);
     
-    for (i = 0; i < nr; i++) {
-        for (j = 0; j < nc; j++) {
+    for (int i = 0; i < nr; i++) {
+        for (int j = 0; j < nc; j++) {
             if (map[i][j] == (-1)) {
                 expand_r(map, i, j, ++n);
             }
@@ -34,9 +34,9 @@ int main(int argc, char *argv[]) {
 void map_read(char *name, int map[DIM][DIM], int *nr, int *nc) {
     FILE *fp;
     char line[DIM + 2];
-    int i, j;
-
-    fp = fopen(name, "r");
+	int i, j;
+    
+	fp = fopen(name, "r");
     if (fp == NULL) {
         perror("Error opening file");
         exit(EXIT_FAILURE);
@@ -77,7 +77,6 @@ void expand_r(int map[DIM][DIM], int x, int y, int id) {
 
 void map_write(char *name, int map[DIM][DIM], int nr, int nc, int n) {
     FILE *fp;
-    int i, j;
 
     fp = fopen(name, "w");  // Open file for writing
     if (fp == NULL) {
@@ -85,8 +84,8 @@ void map_write(char *name, int map[DIM][DIM], int nr, int nc, int n) {
         exit(EXIT_FAILURE);
     }
 
-    for (i = 0; i < nr; i++) {
-        for (j = 0; j < nc; j++) {
+    for (int i = 0; i < nr; i++) {
+        for (int j = 0; j < nc; j++) {
             if (map[i][j] == 0) {
                 fprintf(fp, "*");
             } else {
